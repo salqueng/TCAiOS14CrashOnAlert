@@ -11,9 +11,7 @@
 		78C422FD277019A20045C943 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C422FC277019A20045C943 /* ContentView.swift */; };
 		78C422FF277019A30045C943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C422FE277019A30045C943 /* Assets.xcassets */; };
 		78C42302277019A30045C943 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C42301277019A30045C943 /* Preview Assets.xcassets */; };
-		78C4230C277019A30045C943 /* TCAiOS14CrashOnAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C4230B277019A30045C943 /* TCAiOS14CrashOnAlertTests.swift */; };
-		78C42316277019A30045C943 /* TCAiOS14CrashOnAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C42315277019A30045C943 /* TCAiOS14CrashOnAlertUITests.swift */; };
-		78C42318277019A30045C943 /* TCAiOS14CrashOnAlertUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C42317277019A30045C943 /* TCAiOS14CrashOnAlertUITestsLaunchTests.swift */; };
+		78C4232627701A640045C943 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 78C4232527701A640045C943 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +38,7 @@
 		78C422FE277019A30045C943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78C42301277019A30045C943 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		78C42307277019A30045C943 /* TCAiOS14CrashOnAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAiOS14CrashOnAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78C4230B277019A30045C943 /* TCAiOS14CrashOnAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAiOS14CrashOnAlertTests.swift; sourceTree = "<group>"; };
 		78C42311277019A30045C943 /* TCAiOS14CrashOnAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAiOS14CrashOnAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78C42315277019A30045C943 /* TCAiOS14CrashOnAlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAiOS14CrashOnAlertUITests.swift; sourceTree = "<group>"; };
-		78C42317277019A30045C943 /* TCAiOS14CrashOnAlertUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAiOS14CrashOnAlertUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78C4232627701A640045C943 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				78C422F9277019A20045C943 /* TCAiOS14CrashOnAlert */,
-				78C4230A277019A30045C943 /* TCAiOS14CrashOnAlertTests */,
-				78C42314277019A30045C943 /* TCAiOS14CrashOnAlertUITests */,
 				78C422F8277019A20045C943 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,23 +104,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		78C4230A277019A30045C943 /* TCAiOS14CrashOnAlertTests */ = {
-			isa = PBXGroup;
-			children = (
-				78C4230B277019A30045C943 /* TCAiOS14CrashOnAlertTests.swift */,
-			);
-			path = TCAiOS14CrashOnAlertTests;
-			sourceTree = "<group>";
-		};
-		78C42314277019A30045C943 /* TCAiOS14CrashOnAlertUITests */ = {
-			isa = PBXGroup;
-			children = (
-				78C42315277019A30045C943 /* TCAiOS14CrashOnAlertUITests.swift */,
-				78C42317277019A30045C943 /* TCAiOS14CrashOnAlertUITestsLaunchTests.swift */,
-			);
-			path = TCAiOS14CrashOnAlertUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +120,9 @@
 			dependencies = (
 			);
 			name = TCAiOS14CrashOnAlert;
+			packageProductDependencies = (
+				78C4232527701A640045C943 /* ComposableArchitecture */,
+			);
 			productName = TCAiOS14CrashOnAlert;
 			productReference = 78C422F7277019A20045C943 /* TCAiOS14CrashOnAlert.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +195,9 @@
 				Base,
 			);
 			mainGroup = 78C422EE277019A20045C943;
+			packageReferences = (
+				78C4232427701A640045C943 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 78C422F8277019A20045C943 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78C4230C277019A30045C943 /* TCAiOS14CrashOnAlertTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78C42318277019A30045C943 /* TCAiOS14CrashOnAlertUITestsLaunchTests.swift in Sources */,
-				78C42316277019A30045C943 /* TCAiOS14CrashOnAlertUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -579,6 +559,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		78C4232427701A640045C943 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.30.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78C4232527701A640045C943 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78C4232427701A640045C943 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 78C422EF277019A20045C943 /* Project object */;
 }
